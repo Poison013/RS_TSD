@@ -1,0 +1,127 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD.Android\\RS_TSD.Android.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD.Android\\RS_TSD.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD.Android\\RS_TSD.Android.csproj",
+        "projectName": "RS_TSD.Android",
+        "projectPath": "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD.Android\\RS_TSD.Android.csproj",
+        "packagesPath": "C:\\Users\\Dmitr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD.Android\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dmitr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {
+              "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD\\RS_TSD.csproj": {
+                "projectPath": "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD\\RS_TSD.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.8.0.1451, )"
+            }
+          }
+        }
+      }
+    },
+    "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD\\RS_TSD.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD\\RS_TSD.csproj",
+        "projectName": "RS_TSD",
+        "projectPath": "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD\\RS_TSD.csproj",
+        "packagesPath": "C:\\Users\\Dmitr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Dmitr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.8.0.1451, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

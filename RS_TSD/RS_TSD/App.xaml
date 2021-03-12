@@ -3,6 +3,124 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RS_TSD.App">
     <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
 
+            <Style TargetType="Image" x:Key="Logo">
+                <Setter Property="Source" Value="Logo.png"/>
+                <Setter Property="HorizontalOptions" Value="End"/>
+            </Style>
+
+            <!--#region Button-->
+            <Style TargetType="Button" x:Key="Btn_UL">
+                <Setter Property="BackgroundColor" Value="#333"/>
+                <Setter Property="TextColor" Value="#fed122"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="17"/>
+                <Setter Property="HorizontalOptions" Value="Start"/>
+                <Setter Property="CornerRadius" Value="0"/>
+            </Style>
+            
+            <Style TargetType="Button" x:Key="Btn_UR">
+                <Setter Property="BackgroundColor" Value="#333"/>
+                <Setter Property="TextColor" Value="#fed122"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="17"/>
+                <Setter Property="HorizontalOptions" Value="End"/>
+                <Setter Property="CornerRadius" Value="0"/>
+                <Setter Property="Margin" Value="0,0,-1,0"/>
+            </Style>
+
+            <Style TargetType="Button" x:Key="Btn_F">
+                <Setter Property="BackgroundColor" Value="#fed122"/>
+                <Setter Property="TextColor" Value="#333"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="17"/>
+                <Setter Property="Margin" Value="10,0"/>
+                <Setter Property="CornerRadius" Value="0"/>
+            </Style>
+
+            <Style TargetType="Button" x:Key="Btn_3">
+                <Setter Property="BackgroundColor" Value="#333"/>
+                <Setter Property="TextColor" Value="#fed122"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="17"/>
+                <Setter Property="Margin" Value="0"/>
+                <Setter Property="CornerRadius" Value="0"/>
+            </Style>
+            <!--#endregion-->
+
+            <!--#region BoxView-->
+            <Style TargetType="BoxView" x:Key="BV_3">
+                <Setter Property="BackgroundColor" Value="#333"/>
+                <Setter Property="Margin" Value="10,0"/>
+            </Style>
+            <!--#endregion-->
+
+            <!--#region Label-->
+            <Style TargetType="Label" x:Key="Lab_Error">
+                <Setter Property="TextColor" Value="Red"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="Lab_UR">
+                <Setter Property="TextColor" Value="#333"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="HorizontalTextAlignment" Value="End"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="Margin" Value="0,0,10,0"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="Lab_W">
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="TextColor" Value="#333"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="Margin" Value="12,2"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="Lab_F">
+                <Setter Property="BackgroundColor" Value="#fed122"/>
+                <Setter Property="TextColor" Value="#333"/>
+                <Setter Property="Text" Value="Рабочий не выбран"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="Margin" Value="2"/>
+            </Style>
+            <!--#endregion-->
+
+            <!--#region Entry-->
+            <Style TargetType="Entry" x:Key="Entry_W">
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="PlaceholderColor" Value="#333"/>
+                <Setter Property="TextColor" Value="#333"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="17"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="HorizontalTextAlignment" Value="Start"/>
+                <Setter Property="Margin" Value="12,2"/>
+            </Style>
+            <!--#endregion-->
+
+            <!--#region Picker-->
+            <Style TargetType="Picker" x:Key="Picker_Time">
+                <Setter Property="BackgroundColor" Value="LightGray"/>
+                <Setter Property="TextColor" Value="#333"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="Margin" Value="0"/>
+            </Style>
+            <!--#endregion-->
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

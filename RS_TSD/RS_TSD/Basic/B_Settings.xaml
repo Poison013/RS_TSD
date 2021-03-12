@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RS_TSD.Basic.B_Settings"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <BoxView BackgroundColor="#fed122"/>
+        <Image Style="{StaticResource Logo}"/>
+        <Button x:Name="Btn_Back" Clicked="Btn_Back_Clicked" Text="Назад" Style="{StaticResource Btn_UL}"/>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+
+            <BoxView Grid.Row="0" Style="{StaticResource BV_3}"/>
+            <Entry Grid.Row="0" x:Name="Entry_IP" Placeholder="IP" Style="{StaticResource Entry_W}"/>
+
+            <BoxView Grid.Row="1" Style="{StaticResource BV_3}"/>
+            <Entry Grid.Row="1" x:Name="Entry_Port" Placeholder="Port" Keyboard="Numeric" Style="{StaticResource Entry_W}"/>
+
+            <Button Grid.Row="2" x:Name="Btn_TestConnect" Clicked="Btn_TestConnect_Clicked" Text="Проверить соединение" Style="{StaticResource Btn_F}"/>
+
+            <Button Grid.Row="4" x:Name="Btn_Save" Clicked="Btn_Save_Clicked" Text="Сохранить" Style="{StaticResource Btn_3}"/>
+        </Grid>
+    </Grid>
+</ContentPage>

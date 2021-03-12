@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RS_TSD.General.G_Settings"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <BoxView BackgroundColor="#fed122"/>
+        <Image Style="{StaticResource Logo}"/>
+        <Button x:Name="Btn_Esc" Clicked="Btn_Esc_Clicked" Text="Назад" Style="{StaticResource Btn_UL}"/>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+
+            <BoxView Grid.Row="0" Grid.RowSpan="2" Style="{StaticResource BV_3}"/>
+            <Label Grid.Row="0" Text="Дата" Style="{StaticResource Lab_W}"/>
+            <Grid Grid.Row="1" Margin="12,-6,12,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" x:Name="Btn_Minus" Clicked="Btn_EditDate_Clicked" TabIndex="-1" Text="-" FontSize="25" Margin="0" Style="{StaticResource Btn_F}"/>
+                <Label Grid.Column="1" x:Name="Lab_Date" Margin="-6,0,-6,0" Style="{StaticResource Lab_W}"/>
+                <Button Grid.Column="2" x:Name="Btn_Plus" Clicked="Btn_EditDate_Clicked" TabIndex="1" Text="+" FontSize="25" Margin="0" Style="{StaticResource Btn_F}"/>
+            </Grid>
+
+            <BoxView Grid.Row="2" Grid.RowSpan="2" Style="{StaticResource BV_3}"/>
+            <Label Grid.Row="2" Text="Время начала" Style="{StaticResource Lab_W}"/>
+            <Grid Grid.Row="3" Margin="12,-6,12,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Text="Часы" Margin="0" Style="{StaticResource Lab_W}"/>
+                <Picker Grid.Column="1" x:Name="Picker_Time1" Title="Часы" Margin="-6,0,-6,0" Style="{StaticResource Picker_Time}">
+                    <Picker.Items>
+                        <x:String>00</x:String>
+                        <x:String>01</x:String>
+                        <x:String>02</x:String>
+                        <x:String>03</x:String>
+                        <x:String>04</x:String>
+                        <x:String>05</x:String>
+                        <x:String>06</x:String>
+                        <x:String>07</x:String>
+                        <x:String>08</x:String>
+                        <x:String>09</x:String>
+                        <x:String>10</x:String>
+                        <x:String>11</x:String>
+                        <x:String>12</x:String>
+                        <x:String>13</x:String>
+                        <x:String>14</x:String>
+                        <x:String>15</x:String>
+                        <x:String>16</x:String>
+                        <x:String>17</x:String>
+                        <x:String>18</x:String>
+                        <x:String>19</x:String>
+                        <x:String>20</x:String>
+                        <x:String>21</x:String>
+                        <x:String>22</x:String>
+                        <x:String>23</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Grid.Column="2" Text="Минуты" Margin="0" Style="{StaticResource Lab_W}"/>
+                <Picker Grid.Column="3" x:Name="Picker_Time2" Title="Минуты" Margin="-6,0,0,0" Style="{StaticResource Picker_Time}">
+                    <Picker.Items>
+                        <x:String>00</x:String>
+                        <x:String>05</x:String>
+                        <x:String>10</x:String>
+                        <x:String>15</x:String>
+                        <x:String>20</x:String>
+                        <x:String>25</x:String>
+                        <x:String>30</x:String>
+                        <x:String>35</x:String>
+                        <x:String>40</x:String>
+                        <x:String>45</x:String>
+                        <x:String>50</x:String>
+                        <x:String>55</x:String>
+                    </Picker.Items>
+                </Picker>
+            </Grid>
+
+            <BoxView Grid.Row="4" Grid.RowSpan="2" Style="{StaticResource BV_3}"/>
+            <Label Grid.Row="4" Text="Режим пиления" Style="{StaticResource Lab_W}"/>
+            <Picker Grid.Row="5" x:Name="Picker_Mode" SelectedIndexChanged="Picker_Mode_SelectedIndexChanged" Title="Режим" Margin="12,-6,12,2" Style="{StaticResource Picker_Time}"/>
+
+            <Button Grid.Row="7" x:Name="Btn_Save" Clicked="Btn_Save_Clicked" Text="Сохранить" Style="{StaticResource Btn_3}"/>
+        </Grid>
+    </Grid>
+</ContentPage>

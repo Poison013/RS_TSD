@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RS_TSD.Woodcutter1.WC1_Main"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <BoxView BackgroundColor="#fed122"/>
+            <Button x:Name="Btn_Esc" Clicked="Btn_Esc_Clicked" Text="Назад" Style="{StaticResource Btn_UL}"/>
+            <Button x:Name="Btn_Settings" Clicked="Btn_Settings_Clicked" Text="Настройки" Style="{StaticResource Btn_UR}" HorizontalOptions="End"/>
+            <Button x:Name="Btn_History" Clicked="Btn_History_Clicked" Text="История" Style="{StaticResource Btn_UR}" HorizontalOptions="End"  IsVisible="false"/>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+                <BoxView Grid.Row="0" Style="{StaticResource BV_3}"/>
+                <Label Grid.Row="0" Text="Лесоцех №1" Style="{StaticResource Lab_W}"/>
+
+                <BoxView Grid.Row="1" Style="{StaticResource BV_3}"/>
+                <Label Grid.Row="1" x:Name="Lab_Data" Style="{StaticResource Lab_W}"/>
+
+                <Grid Grid.Row="2" Margin="10,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <BoxView Grid.RowSpan="2" Grid.ColumnSpan="2" Style="{StaticResource BV_3}" Margin="0"/>
+
+                    <Label Grid.Column="0" Text="Место" Style="{StaticResource Lab_W}" Margin="2,2,0,2"/>
+                    <Label Grid.Column="1" Text="ФИО" Style="{StaticResource Lab_W}" Margin="-4,2,2,2"/>
+
+                    <ScrollView Grid.Row="1" Grid.ColumnSpan="2" Margin="0,-6,0,2">
+                        <Grid x:Name="Grid_Workers">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                                <RowDefinition Height="30"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="150"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <!--#region Пиление 1-5 -->
+                            <Label Grid.Row="0" Grid.ColumnSpan="2" Text="Пиление" Margin="2,-4,2,0" Style="{StaticResource Lab_W}"/>
+
+                            <Label Grid.Row="1" Text="Станочник Arctant" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="2" Text="Станочник UDK03" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="3" Text="Помощник UDK03" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="4" Text="Рубилка1" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="5" Text="Рубилка2" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+
+                            <Label Grid.Row="1" Grid.Column="1" TabIndex="1" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="2" Grid.Column="1" TabIndex="2" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="3" Grid.Column="1" TabIndex="3" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="4" Grid.Column="1" TabIndex="4" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="5" Grid.Column="1" TabIndex="5" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <!--#endregion-->
+
+                            <!--#region Кромочники 7-12-->
+                            <Label Grid.Row="6" Grid.ColumnSpan="2" Text="Кромочники" Margin="2,-4,2,0" Style="{StaticResource Lab_W}"/>
+
+                            <Label Grid.Row="7" Text="Станочник UDK01" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="8" Text="Помощник1 UDK01" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="9" Text="Помощник2 UDK01" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="10" Text="Станочник Kara" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="11" Text="Помощник1 Kara" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="12" Text="Помощник2 Kara" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+
+                            <Label Grid.Row="7" Grid.Column="1" TabIndex="6"   Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="8" Grid.Column="1" TabIndex="7"   Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="9" Grid.Column="1" TabIndex="8"   Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="10" Grid.Column="1" TabIndex="9"  Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="11" Grid.Column="1" TabIndex="10" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="12" Grid.Column="1" TabIndex="11" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <!--#endregion-->
+
+                            <!--#region  Общий персонал 14-19-->
+                            <Label Grid.Row="13" Grid.ColumnSpan="2" Text="Общий персонал" Margin="2,-4,2,0" Style="{StaticResource Lab_W}"/>
+
+                            <Label Grid.Row="14" Text="Приёмщик" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="15" Text="Вилочник" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="16" Text="Слесарь1" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="17" Text="Слесарь2" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="18" Text="Помощник1" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="19" Text="Помощник2" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+
+                            <Label Grid.Row="14" Grid.Column="1" TabIndex="12" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="15" Grid.Column="1" TabIndex="13" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="16" Grid.Column="1" TabIndex="14" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="17" Grid.Column="1" TabIndex="15" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="18" Grid.Column="1" TabIndex="16" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="19" Grid.Column="1" TabIndex="17" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <!--#endregion-->
+
+                            <!--#region Сортировка осн. 21-26-->
+                            <Label Grid.Row="20" Grid.ColumnSpan="2" Text="Сортировка осн." Margin="2,-4,2,0" Style="{StaticResource Lab_W}"/>
+
+                            <Label Grid.Row="21" Text="Укладчик основной1" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="22" Text="Укладчик основной2" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="23" Text="Укладчик основной3" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="24" Text="Укладчик основной4" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="25" Text="Укладчик основной5" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="26" Text="Укладчик основной6" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+
+                            <Label Grid.Row="21" Grid.Column="1" TabIndex="18" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="22" Grid.Column="1" TabIndex="19" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="23" Grid.Column="1" TabIndex="20" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="24" Grid.Column="1" TabIndex="21" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="25" Grid.Column="1" TabIndex="22" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="26" Grid.Column="1" TabIndex="23" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <!--#endregion-->
+
+                            <!--#region Сортировка бок. 28-34-->
+                            <Label Grid.Row="27" Grid.ColumnSpan="2" Text="Сортировка бок." Margin="2,-4,2,0" Style="{StaticResource Lab_W}"/>
+
+                            <Label Grid.Row="28" Text="Укладчик боковой1" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="29" Text="Укладчик боковой2" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="30" Text="Укладчик боковой3" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="31" Text="Укладчик боковой4" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="32" Text="Укладчик боковой5" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="33" Text="Укладчик боковой6" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="34" Text="Укладчик боковой7" Margin="2,-4,0,0" Style="{StaticResource Lab_W}"/>
+
+                            <Label Grid.Row="28" Grid.Column="1" TabIndex="24" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="29" Grid.Column="1" TabIndex="25" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="30" Grid.Column="1" TabIndex="26" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="31" Grid.Column="1" TabIndex="27" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="32" Grid.Column="1" TabIndex="28" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="33" Grid.Column="1" TabIndex="29" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <Label Grid.Row="34" Grid.Column="1" TabIndex="30" Margin="-4,-4,2,0" Style="{StaticResource Lab_W}"/>
+                            <!--#endregion-->
+                        </Grid>
+                    </ScrollView>
+                </Grid>
+
+                <Grid Grid.Row="3">
+                    <Button Grid.Row="0" x:Name="Btn_Select" Clicked="Btn_Select_Clicked" Text="Выбор сотрудников" IsVisible="True" Style="{StaticResource Btn_F}"/>
+                    <Button Grid.Row="0" x:Name="Btn_Edit" Clicked="Btn_Edit_Clicked" Text="Снять/Добавить" IsVisible="False" Style="{StaticResource Btn_F}"/>
+
+                    <Button Grid.Row="1" x:Name="Btn_Start" Clicked="Btn_Start_Clicked" Text="Начать смену" IsVisible="True" Style="{StaticResource Btn_3}"/>
+                    <Button Grid.Row="1" x:Name="Btn_End" Clicked="Btn_End_Clicked" Text="закончить смену" IsVisible="False" Style="{StaticResource Btn_3}"/>
+                </Grid>
+            </Grid>
+        </Grid>
+
+        <Grid x:Name="Grid_Start" IsVisible="False">
+            <BoxView BackgroundColor="White" Opacity="0.85"/>
+            <Frame HeightRequest="230" BackgroundColor="White" BorderColor="#333" CornerRadius="0" Margin="10,0" VerticalOptions="Center">
+                <Grid Margin="-18">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <BoxView Grid.Row="0" Margin="0" Style="{StaticResource BV_3}"/>
+                    <Label Grid.Row="0" Text="Начать смену?" FontSize="20" Margin="0,0,0,2" Style="{StaticResource Lab_F}"/>
+
+                    <Grid Grid.Row="1" Margin="10,0" VerticalOptions="Center">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
+
+                        <BoxView Grid.Row="0" Grid.ColumnSpan="2" Margin="0" Style="{StaticResource BV_3}"/>
+                        <Label Grid.Row="0" Grid.Column="0" Text="Дата" Margin="2,2,0,2" Style="{StaticResource Lab_W}"/>
+                        <Label Grid.Row="0" Grid.Column="1" x:Name="Lab_Start_Date" Margin="-4,2,2,2" Style="{StaticResource Lab_W}"/>
+
+                        <BoxView Grid.Row="1" Grid.ColumnSpan="2" Margin="0" Style="{StaticResource BV_3}"/>
+                        <Label Grid.Row="1" Grid.Column="0" Text="Время" Margin="2,2,0,2" Style="{StaticResource Lab_W}"/>
+                        <Label Grid.Row="1" Grid.Column="1" x:Name="Lab_Start_Time" Margin="-4,2,2,2" Style="{StaticResource Lab_W}"/>
+
+                        <BoxView Grid.Row="2" Grid.ColumnSpan="2" Margin="0" Style="{StaticResource BV_3}"/>
+                        <Label Grid.Row="2" Grid.Column="0" Text="Режим пиления" Margin="2,2,0,2" Style="{StaticResource Lab_W}"/>
+                        <Label Grid.Row="2" Grid.Column="1" x:Name="Lab_Start_Mode" Margin="-4,2,2,2" Style="{StaticResource Lab_W}"/>
+                    </Grid>
+
+                    <Grid Grid.Row="2">
+                        <Button Grid.Column="0" x:Name="Btn_Start_No" Clicked="Btn_Start_No_Clicked" Text="Нет" Margin="0" Style="{StaticResource Btn_F}"/>
+                        <Button Grid.Column="1" x:Name="Btn_Start_Yes" Clicked="Btn_Start_Yes_Clicked" Text="Да" Margin="0" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                </Grid>
+            </Frame>
+        </Grid>
+
+        <Grid x:Name="Grid_End" IsVisible="False">
+            <BoxView BackgroundColor="White" Opacity="0.85"/>
+            <Frame HeightRequest="230" BackgroundColor="White" BorderColor="#333" CornerRadius="0" Margin="10,0" VerticalOptions="Center" IsVisible="True">
+                <Grid Margin="-18">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition/>
+                        <RowDefinition Height="100"/>
+                    </Grid.RowDefinitions>
+                    <BoxView Grid.Row="0" Margin="0" Style="{StaticResource BV_3}"/>
+                    <Label Grid.Row="0" Text="Закончить смену?" FontSize="20" Margin="0,0,0,2" Style="{StaticResource Lab_F}"/>
+
+                    <Grid Grid.Row="1" VerticalOptions="Center">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="50"/>
+                        </Grid.RowDefinitions>
+
+                        <BoxView Grid.RowSpan="2" Style="{StaticResource BV_3}"/>
+                        <Label Grid.Row="0" Text="Время конца" Margin="12,2,12,0" Style="{StaticResource Lab_W}"/>
+                        <TimePicker Grid.Row="1" x:Name="TP_End_Time" BackgroundColor="White" TextColor="#333" FontAttributes="Bold" Margin="12,-4,12,2"/>
+                    </Grid>
+
+                    <Grid Grid.Row="2">
+                        <Button Grid.Row="0" Grid.Column="0" x:Name="Btn_End_No" Clicked="Btn_End_No_Clicked" Text="Нет" Margin="0" Style="{StaticResource Btn_F}"/>
+                        <Button Grid.Row="0" Grid.Column="1" x:Name="Btn_End_Yes" Clicked="Btn_End_Yes_Clicked" Text="Да" Margin="0" Style="{StaticResource Btn_F}"/>
+
+                        <Button Grid.Row="1" Grid.ColumnSpan="2" x:Name="Btn_End_New" Clicked="Btn_End_New_Clicked"  Text="Начать новую" Margin="0" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                </Grid>
+            </Frame>
+        </Grid>
+    </Grid>
+</ContentPage>

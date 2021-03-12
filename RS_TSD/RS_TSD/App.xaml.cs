@@ -10,7 +10,7 @@ namespace RS_TSD
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new Basic.B_Authorization());
         }
 
         protected override void OnStart()

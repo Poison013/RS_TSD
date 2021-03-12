@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RS_TSD.Woodcutter1.WC1_Select"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <BoxView BackgroundColor="#fed122"/>
+        <Button x:Name="Btn_Esc" Clicked="Btn_Esc_Clicked" Text="Назад" Style="{StaticResource Btn_UL}"/>
+        <Button x:Name="Btn_Briafing" Clicked="Btn_Briafing_Clicked" Text="Инструктаж" Style="{StaticResource Btn_UR}"/>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+
+            <ScrollView x:Name="SV_PL" IsVisible="true">
+                <Grid x:Name="Grid_PL" Margin="10,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="0" Text="Станочник Arctant" Style="{StaticResource Lab_W}"/>
+                    <Label Grid.Row="2" Text="Станочник UDK03" Style="{StaticResource Lab_W}"/>
+                    <Label Grid.Row="4" Text="Помощник UDK03" Style="{StaticResource Lab_W}"/>
+                    <Label Grid.Row="6" Text="Рубилка" Style="{StaticResource Lab_W}"/>
+                    
+                    <Grid Grid.Row="1" TabIndex="1" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="3" TabIndex="2" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="5" TabIndex="3" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="7" TabIndex="4" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="8" TabIndex="5" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    
+                </Grid>
+            </ScrollView>
+
+            <ScrollView x:Name="SV_KR" IsVisible="false">
+                <Grid x:Name="Grid_KR" Margin="10,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="0" Text="Станочник UDK01" TextColor="#333" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="15"/>
+                    <Label Grid.Row="2" Text="Помощник UDK01" TextColor="#333" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="15"/>
+                    <Label Grid.Row="5" Text="Стоночник Kara" TextColor="#333" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="15"/>
+                    <Label Grid.Row="7" Text="Помощник Kara" TextColor="#333" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="15"/>
+
+                    <Grid Grid.Row="1" TabIndex="6" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="3" TabIndex="7" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="4" TabIndex="8" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="6" TabIndex="9" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="8" TabIndex="10" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="9" TabIndex="11" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                </Grid>
+            </ScrollView>
+
+            <ScrollView x:Name="SV_PR" IsVisible="false">
+                <Grid x:Name="Grid_PR" Margin="10,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="0" Text="Приёмщик" TextColor="#333" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="15"/>
+                    <Label Grid.Row="2" Text="Вилочник" TextColor="#333" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="15"/>
+                    <Label Grid.Row="4" Text="Слесарь" TextColor="#333" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="15"/>
+                    <Label Grid.Row="7" Text="Вилочник" TextColor="#333" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="15"/>
+
+                    <Grid Grid.Row="1" TabIndex="12" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="3" TabIndex="13" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="5" TabIndex="14" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="6" TabIndex="15" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="8" TabIndex="16" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="9" TabIndex="17" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                </Grid>
+            </ScrollView>
+
+            <ScrollView x:Name="SV_OS" IsVisible="false">
+                <Grid x:Name="Grid_OS" Margin="10,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Text="Укладчик основной" TextColor="#333" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="15"/>
+
+                    <Grid Grid.Row="1" TabIndex="18" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="2" TabIndex="19" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="3" TabIndex="20" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="4" TabIndex="21" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="5" TabIndex="22" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="6" TabIndex="23" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                </Grid>
+            </ScrollView>
+
+            <ScrollView x:Name="SV_BK" IsVisible="false">
+                <Grid x:Name="Grid_BK" Margin="10,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Text="Укладчик боковой" Style="{StaticResource Lab_W}"/>
+
+                    <Grid Grid.Row="1" TabIndex="24" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="2" TabIndex="25" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="3" TabIndex="26" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="4" TabIndex="27" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="5" TabIndex="28" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="6" TabIndex="29" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                    <Grid Grid.Row="7" TabIndex="30" BackgroundColor="#333">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="70"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column="0" Style="{StaticResource Lab_F}"/>
+                        <Button Grid.Column="1" Clicked="Btn_Scan_Clicked" Text="Скан" Margin="-6,2,2,2" Style="{StaticResource Btn_F}"/>
+                    </Grid>
+                </Grid>
+            </ScrollView>
+
+            <Grid Grid.Row="1">
+                <BoxView Grid.Column="0" Margin="0" Style="{StaticResource BV_3}"/>
+                <BoxView Grid.Column="1" Margin="0" Style="{StaticResource BV_3}"/>
+                <BoxView Grid.Column="2" Margin="0" Style="{StaticResource BV_3}"/>
+                <BoxView Grid.Column="3" Margin="0" Style="{StaticResource BV_3}"/>
+                <BoxView Grid.Column="4" Margin="0" Style="{StaticResource BV_3}"/>
+
+                <Button Grid.Column="0" x:Name="Btn_PL" Clicked="Btn_Menu_Clicked" TabIndex="1" Text="ПЛ"  Margin="2" Style="{StaticResource Btn_F}"/>
+                <Button Grid.Column="1" x:Name="Btn_KR" Clicked="Btn_Menu_Clicked" TabIndex="2" Text="КР"  Margin="0" Style="{StaticResource Btn_F}"/>
+                <Button Grid.Column="2" x:Name="Btn_PR" Clicked="Btn_Menu_Clicked" TabIndex="3" Text="..." Margin="0" Style="{StaticResource Btn_F}"/>
+                <Button Grid.Column="3" x:Name="Btn_OS" Clicked="Btn_Menu_Clicked" TabIndex="4" Text="ОС"  Margin="0" Style="{StaticResource Btn_F}"/>
+                <Button Grid.Column="4" x:Name="Btn_BK" Clicked="Btn_Menu_Clicked" TabIndex="5" Text="БК"  Margin="0" Style="{StaticResource Btn_F}"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</ContentPage>

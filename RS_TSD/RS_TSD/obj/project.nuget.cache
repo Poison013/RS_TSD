@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "ijHibtTMi9YUwBCz0BsLhTGia8WOo1pllVknPr6GADGHJqXv9OLvpuoYYqi4RUC7h+PHZqZ5s2VHz/IQryHPlQ==",
+  "dgSpecHash": "wyc8HhsXl+3cjX1HEQ8l8Zcd+y812VbmXYO0GBbp6qbhVCpfvJojv7+aQqOG7qXlbHjXQlmuEPdZTdb3/FkHow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD\\RS_TSD.csproj",
+  "projectFilePath": "C:\\Poison013\\RS_TSD\\RS_TSD\\RS_TSD\\RS_TSD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dmitr\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Dmitr\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Dmitr\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Dmitr\\.nuget\\packages\\plugin.toast\\2.2.0\\plugin.toast.2.2.0.nupkg.sha512",
     "C:\\Users\\Dmitr\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Dmitr\\.nuget\\packages\\xam.plugins.settings\\3.1.1\\xam.plugins.settings.3.1.1.nupkg.sha512",
     "C:\\Users\\Dmitr\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Users\\Dmitr\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
   ],

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RS_TSD.Basic.B_Authorization"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <BoxView BackgroundColor="#fed122"/>
+        <Image Style="{StaticResource Logo}"/>
+        <Button x:Name="Btn_Settings" Clicked="Btn_Settings_Clicked" Text="Настройки" Style="{StaticResource Btn_UL}"/>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" Source="RS_Icon.png"/>
+
+            <Label Grid.Row="1" x:Name="Lab_Error" Style="{StaticResource Lab_Error}"/>
+
+            <BoxView Grid.Row="2" Style="{StaticResource BV_3}"/>
+            <Entry Grid.Row="2" x:Name="Entry_Login" Placeholder="Логин" Style="{StaticResource Entry_W}"/>
+
+            <BoxView Grid.Row="3" Style="{StaticResource BV_3}"/>
+            <Entry Grid.Row="3" x:Name="Entry_Password" Placeholder="Пароль" Style="{StaticResource Entry_W}"/>
+
+            <Button Grid.Row="4" x:Name="Btn_Authorization" Clicked="Btn_Authorization_Clicked" Text="Авторизация" Style="{StaticResource Btn_F}"/>
+        </Grid>
+    </Grid>
+</ContentPage>

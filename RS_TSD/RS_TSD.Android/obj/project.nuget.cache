@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "qYogjNl2SO2yanM+ikQFAiUPVGNyc/r+P/cS9YFpAyiH87CCZxqxzNydy6HdhNGJ4V7WTRQ9UkxcglwsfL3dPg==",
+  "dgSpecHash": "zdco9hfieY9/NX1FyXUaNCg48KHdN/AscE9JAq10bbJxAZNu0rwS2bSheWfXAZO+4Di9+1c1+bbakcJGAGJknw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD.Android\\RS_TSD.Android.csproj",
+  "projectFilePath": "C:\\Poison013\\RS_TSD\\RS_TSD\\RS_TSD.Android\\RS_TSD.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Dmitr\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Dmitr\\.nuget\\packages\\plugin.toast\\2.2.0\\plugin.toast.2.2.0.nupkg.sha512",
     "C:\\Users\\Dmitr\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Dmitr\\.nuget\\packages\\xam.plugins.settings\\3.1.1\\xam.plugins.settings.3.1.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation\\1.1.0.8\\xamarin.androidx.annotation.1.1.0.8.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.annotation.experimental\\1.0.0.8\\xamarin.androidx.annotation.experimental.1.0.0.8.nupkg.sha512",

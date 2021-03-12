@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD.Android\\RS_TSD.Android.csproj": {}
+    "C:\\Poison013\\RS_TSD\\RS_TSD\\RS_TSD.Android\\RS_TSD.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD.Android\\RS_TSD.Android.csproj": {
+    "C:\\Poison013\\RS_TSD\\RS_TSD\\RS_TSD.Android\\RS_TSD.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD.Android\\RS_TSD.Android.csproj",
+        "projectUniqueName": "C:\\Poison013\\RS_TSD\\RS_TSD\\RS_TSD.Android\\RS_TSD.Android.csproj",
         "projectName": "RS_TSD.Android",
-        "projectPath": "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD.Android\\RS_TSD.Android.csproj",
+        "projectPath": "C:\\Poison013\\RS_TSD\\RS_TSD\\RS_TSD.Android\\RS_TSD.Android.csproj",
         "packagesPath": "C:\\Users\\Dmitr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD.Android\\obj\\",
+        "outputPath": "C:\\Poison013\\RS_TSD\\RS_TSD\\RS_TSD.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -34,8 +34,8 @@
         "frameworks": {
           "monoandroid11.0": {
             "projectReferences": {
-              "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD\\RS_TSD.csproj": {
-                "projectPath": "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD\\RS_TSD.csproj"
+              "C:\\Poison013\\RS_TSD\\RS_TSD\\RS_TSD\\RS_TSD.csproj": {
+                "projectPath": "C:\\Poison013\\RS_TSD\\RS_TSD\\RS_TSD\\RS_TSD.csproj"
               }
             }
           }
@@ -56,14 +56,14 @@
         }
       }
     },
-    "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD\\RS_TSD.csproj": {
+    "C:\\Poison013\\RS_TSD\\RS_TSD\\RS_TSD\\RS_TSD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD\\RS_TSD.csproj",
+        "projectUniqueName": "C:\\Poison013\\RS_TSD\\RS_TSD\\RS_TSD\\RS_TSD.csproj",
         "projectName": "RS_TSD",
-        "projectPath": "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD\\RS_TSD.csproj",
+        "projectPath": "C:\\Poison013\\RS_TSD\\RS_TSD\\RS_TSD\\RS_TSD.csproj",
         "packagesPath": "C:\\Users\\Dmitr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dmitr\\OneDrive\\Рабочий стол\\ООО.Тайга\\RS_TSD\\RS_TSD\\RS_TSD\\obj\\",
+        "outputPath": "C:\\Poison013\\RS_TSD\\RS_TSD\\RS_TSD\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -103,6 +103,18 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Plugin.Toast": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Xam.Plugins.Settings": {
+              "target": "Package",
+              "version": "[3.1.1, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RS_TSD.General.G_History"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <BoxView BackgroundColor="#fed122"/>
+        <Image Style="{StaticResource Logo}"/>
+        <Button x:Name="Btn_Esc" Clicked="Btn_Esc_Clicked" Text="Назад" Style="{StaticResource Btn_UL}"/>
+
+        <ScrollView Grid.Row="1" Orientation="Both" BackgroundColor="#333" Margin="10,0,10,10">
+            <Grid x:Name="Grid_History">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="60"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Text="Место" Margin="2,2,0,0" Style="{StaticResource Lab_W}"/>
+                <Label Grid.Column="1" Text="ФИО" Margin="-4,2,0,0" Style="{StaticResource Lab_W}"/>
+                <Label Grid.Column="2" Text="Время&#10;начала" Margin="-4,2,0,0" Style="{StaticResource Lab_W}"/>
+                <Label Grid.Column="3" Text="Время&#10;конца" Margin="-4,2,2,0" Style="{StaticResource Lab_W}"/>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>

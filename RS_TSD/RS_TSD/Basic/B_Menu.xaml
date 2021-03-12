@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RS_TSD.Basic.B_Menu"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <BoxView BackgroundColor="#fed122"/>
+        <Label x:Name="Lab_UserName" Style="{StaticResource Lab_UR}"/>
+        <Button x:Name="Btn_Exit" Clicked="Btn_Exit_Clicked" Text="Выйти" Style="{StaticResource Btn_UL}"/>
+        <Grid Grid.Row="1">
+            <Button Grid.Row="0" Grid.Column="0" x:Name="Btn_WC1" Clicked="Btn_WC1_Clicked"  TabIndex="1" Text="Лесоцех №1" Margin="0" Style="{StaticResource Btn_F}"/>
+            <Button Grid.Row="0" Grid.Column="1" x:Name="Btn_STF" Clicked="Btn_Region_Clicked" TabIndex="2" Text="Сортировка леса" Margin="0" Style="{StaticResource Btn_F}" IsVisible="False"/>
+
+            <Button Grid.Row="1" Grid.Column="0" x:Name="Btn_WAS" Clicked="Btn_Region_Clicked" TabIndex="3" Text="Погрузка П/М и Склад" Margin="0" Style="{StaticResource Btn_F}" IsVisible="False"/>
+            <Button Grid.Row="1" Grid.Column="1" x:Name="Btn_DAP" Clicked="Btn_Region_Clicked" TabIndex="4" Text="Сушилка и упаковка" Margin="0" Style="{StaticResource Btn_F}" IsVisible="False"/>
+
+            <Button Grid.Row="2" Grid.Column="0" x:Name="Btn_WC3" Clicked="Btn_Region_Clicked" TabIndex="5" Text="Лесоцех ЦДС" Margin="0" Style="{StaticResource Btn_F}" IsVisible="False"/>
+            <Button Grid.Row="2" Grid.Column="1" x:Name="Btn_LTB" Clicked="Btn_Region_Clicked" TabIndex="6" Text="Погрузка баланса" Margin="0" Style="{StaticResource Btn_F}" IsVisible="False"/>
+
+            <Button Grid.Row="3" Grid.Column="0" x:Name="Btn_WC2" Clicked="Btn_Region_Clicked" TabIndex="7" Text="Лесоцех №2" Margin="0" Style="{StaticResource Btn_F}" IsVisible="False"/>
+        </Grid>
+    </Grid>
+</ContentPage>
